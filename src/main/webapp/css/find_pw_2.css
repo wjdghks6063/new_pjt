@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+    font-family: 'Dongle';
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-size:cover;
+    background: url("pastel2.jpg") no repeat center;
+    animation:image_change 10s infinite;
+}
+
+section{
+    box-shadow: 1px 3px 19px 4px lightgray; width:600px; 
+    margin-top:22px; 
+    padding-top:30px;
+    margin-right:20px; 
+    padding-bottom:20px;
+}
+
+body::before{
+    position: absolute; z-index: 1;
+    top:0; right:0; bottom:0; left:0;
+}
+.int_area input{
+    width:60%;
+    height:20px;
+    padding: 1px 10px 0px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #999;
+    font-size: 20px; color: lightslategray;
+    outline:none;
+}
+
+.int_area input[type="radio"]{
+    width:20px;
+    height:20px;
+  
+}
+
+.find_id_form h1{
+    font-size: 50px; color:gray;
+    text-align: center;
+}
+
+.find_id_form_2{
+        margin-left:100px;
+}
+
+.int_area label{
+   margin-left:10px;
+   font-size:30px;
+   color:#999;
+}
+
+.btn_area {margin-top:30px;}
+.btn_area button{
+    width:40%;
+    margin-left:90px;
+    height:40px;
+    background:gray;
+    color:white;
+    font-size:30px;
+    border: none;
+    border-radius:25px;
+    font-family: 'Dongle';
+    
+}

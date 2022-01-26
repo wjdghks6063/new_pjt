@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8" />
+    <title>homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <!--CDN 링크 -->
+
+    <!--header css-->
+    <link href="css/header.css" rel="stylesheet"> <!-- header css-->
+    <link href="css/global.css" rel="stylesheet">
+
+    <!--페이지 css-->
+    <link href="css/mypage-menu.css" rel="stylesheet">
+    <link href="css/mypage-news.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+<div id="containar">
+    <!--script 밑에 body와 </div> 있음-->
+    <div id="warp" class="warp">
+        <header id="header" class="header-header-1">
+            <div id="header-main">
+                <div id="header-top">
+                    <h1 class="logo-box">
+                        <a href="" class="logo-img"></a>
+                    </h1>
+                    <!-- 헤드 메뉴 내용 -->
+                    <div class="main-top-menu">
+                        <a class="main-text" href="#">기부</a>
+                        <a class="main-text" href="#">봉사</a>
+                        <a class="main-text" href="#">재능 기부</a>
+                        <a class="main-text" href="#">지역 뉴스</a>
+                        <a class="main-text" href="#">정기 후원</a>
+                    </div>
+
+                    <!-- 로그인 및 검색버튼-->
+                    <a class="login" href="">로그인</a>
+                    <span class="longbar"></span>
+                    <!--로그인 돋보기 사이 | 막대기 -->
+                    <a class="search-img" href=""><i class="fas fa-search" style="font-size: 22px;"></i></a>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- 마이 페이지 메뉴-->
+    <div class="my-page-box">
+        <div class="my-list-left">
+            <div class="my-profile">
+                <img src="../홈페이지_기본_레이아웃/img/heart.png" width="72" height="72" alt="유저 프로필 사진" class="my-profile-img" 
+                    style="background-color: white;" id="profileImageArea">
+                <div class="my_profile_nickname">
+                    <span class="ellipsis" id="nickNameArea">nickname1234</span>
+                </div>
+                <div class="my_profile_id" id="maskingIdArea">nickn****</div>
+            </div>
+            <div id="lnb" class="my_lnb" role="menu"> <!-- aria-current="#" 여부에 따라 색상 불 들어옴-->
+                <a href="../홈페이지_기본_레이아웃/my-page-home.html" role="menuitem" class="my_lnb_item" id="lnb_my_home" aria-current="false">MY홈</a> 
+                <a href="../홈페이지_기본_레이아웃/my-page-news.html" role="menuitem" class="my_lnb_item" id="lnb_my_notification" aria-current="true">내 소식</a>
+                <a href="../홈페이지_기본_레이아웃/my-page-activity.html" role="menuitem" class="my_lnb_item" id="lnb_my_activity" aria-current="false">활동내역</a> 
+                <a href="../홈페이지_기본_레이아웃/my-page-regular payment.html" role="menuitem" id="my_lnb_item" class="my_lnb_item" aria-current="false">정기결제관리</a>
+                <a href="../홈페이지_기본_레이아웃/my-page-Year-end-settlement.html"role="menuitem" class="my_lnb_item" id="lnb_my_tax" aria-current="false">연말정산</a>
+            </div>
+        </div>
+        
+
+        <!-- 내용 창 -->
+        <div role="main" id="content" class="my_content"><div class="my_news_wrap">
+            <h2 class="my_title">내 소식</h2>
+            <form>
+                <div class="my_news_option">
+                    <div class="list_category">
+                        <span class="item_category type_donation">
+                            <input id="noti_agreement_donation" type="checkbox" class="input_checkbox"> <label for="noti_agreement_donation" class="label_checkbox"><span class="icon_checkbox"></span>기부</label> 
+                        </span>
+                        <span class="item_category type_funding">
+                            <input id="noti_agreement_funding" type="checkbox" class="input_checkbox"> <label for="noti_agreement_funding" class="label_checkbox"><span class="icon_checkbox"></span>펀딩</label>
+                        </span>
+                    </div>
+                    <div class="my_news_receiption">
+                        <strong class="title">마케팅 알림</strong> 
+                        <input id="noti_agreement" type="checkbox" class="input_switch"> 
+                        <label for="noti_agreement" class="label_switch"><span class="label_switch_handler"></span></label>
+                    </div>
+                    <ul class="list_guide">
+                        <li class="item_guide highlight">결제 알림은 마케팅 알림 수신 동의 여부와 관계없이 발송됩니다.</li>
+                        <li class="item_guide">마케팅 알림 수신에 동의하시면 해피빈의 새 소식과 이벤트를 빠르게 보내드립니다.</li>
+                        <li class="item_guide">마케팅 알림 수신을 거부하시면, 펀딩 프리뷰 알림을 받아보실 수 없습니다.</li>
+                        <li class="item_guide">최근 30일 내 수신한 소식만 노출됩니다.</li>
+                        <li class="item_guide">푸시 알림은 '네이버앱&gt;설정&gt;알림'에서 변경 가능합니다.</li>
+                    </ul>
+                </div>
+            </form>
+
+            <div class="my_news_feed" id="my_notification">
+                <ol class="list_news" id="my_notification_list">	
+                    <li class="item_news type_funding">
+                        <div class="card_news">
+                            <a href="https://happybean.naver.com/my/notification" class="link"></a>
+                            <p class="text_content">
+                                해피빈 마케팅 정보 수신에 동의하셨습니다. (날짜: 2022-01-07)
+                            </p>
+                            <span class="text_information">해피빈</span>
+                            <span class="text_information">2시간전</span>
+                            <button class="button_delete" data-id="61d7a8984403a833c495ec8c">
+                                <span class="blind">삭제</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item_news type_funding">
+                        <div class="card_news">
+                            <a href="https://happybean.naver.com/my/notification" class="link"></a>
+                            <p class="text_content">
+                                해피빈 마케팅 정보 수신을 거부하셨습니다. (날짜: 2022-01-07)
+                            </p>
+                            <span class="text_information">해피빈</span>
+                            <span class="text_information">2시간전</span>
+                            <button class="button_delete" data-id="61d7a8972c5ccf943ae43313">
+                                <span class="blind">삭제</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="item_news type_funding">
+                        <div class="card_news">
+                            <a href="https://happybean.naver.com/my/notification" class="link"></a>
+                            <p class="text_content">
+                                해피빈 마케팅 정보 수신에 동의하셨습니다. (날짜: 2022-01-07)
+                            </p>
+                            <span class="text_information">해피빈</span>
+                            <span class="text_information">2시간전</span>
+                            <button class="button_delete" data-id="61d7a89649c1a162a5e7119c">
+                                <span class="blind">삭제</span>
+                            </button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        
+        </div></div>
+
+
+    </div> <!--my-page-box-->
+
+
+
+        <script>
+            /*메인 header 따라 오기 */
+            let header = document.querySelector(".header-header-1");
+            let headerHeight = header.offsetHeight;
+
+            window.onscroll = function () {
+                let windowTop = window.scrollY;
+                if (windowTop >= headerHeight) {
+                    header.classList.add("is-scroll");
+                } else {
+                    header.classList.remove("is-scroll");
+                }
+            };
+            // 
+
+            var kkeys = [],
+                konami = "38,38,40,40,37,39,37,39,66,65";
+            $(document).keydown(function (e) {
+                kkeys.push(e.keyCode);
+                if (kkeys.toString().indexOf(konami) >= 0) {
+                    kkeys = [];
+                    alert('안녕하세요');
+                }
+            });
+
+            $(document).ready(function() {
+                $("#noti_agreement").click(function() { //<input type="checkbox" id="cbx_chkAll"> 가 체크 될 때 작동한다.
+                    if($("#noti_agreement").is(":checked")) $(".input_checkbox").prop("checked", true); // 전체 체크가 체크 되었다면 input type 이름이 t_check인 것들은 checked 값이 ture(체크)가 된다.
+                    else $(".input_checkbox").prop("checked", false); //input id가 중복 된다면 범위를 지정할수도 있다. .table input[id=t_check] 이런식으로 테이블 범위로만  한정할 수도 있다.
+                });
+                
+                $(".input_checkbox").click(function() { //input name으로 줬었는데 checkbox가 배열로 바뀌면서 name=t_check 나 t_check[] 둘다 인식하지 못해 id로 바꿔줌
+                    var total = $(".input_checkbox").length;
+                    var checked = $(".input_checkbox:checked").length;
+
+                    if(checked == 0) $("#noti_agreement").prop("checked", false);
+                    else $("#noti_agreement").prop("checked", true); 
+                });
+            });
+        </script>
+
+</div>
+</body>
+<!--footer -->
+<footer class="footer-box">
+    <div class="footer-top">
+        <dl class="footer-top-box">
+            <dt class="footer-top-notice"><a href="">공지사항</a></dt>
+            <dd class="foorer-top-notice-text">
+                <a href="">회원 가입시 개인정보 관리 내역에 대해 안내해드립니다.<i class="icon-n"><i class="fab fa-envira"></i></i></a>
+            </dd>
+        </dl>
+        <div class="service-info-box" aria-hidden="false">
+            <dl class="service-info-first-line">
+                <dt class="service-info-first-line-title">해피빈 안내</dt>
+                <dd class="service-info-first-line-item"><a href="">해피빈 소개</a></dd>
+                <dd class="service-info-first-line-item"><a href="">콩받기 안내</a></dd>
+                <dd class="service-info-first-line-item"><a href="">해피빈 현황</a></dd>
+                <dd class="service-info-first-line-item"><a href="">콩구폰 입력</a></dd>
+            </dl>
+            <dl class="service-info-first-line">
+                <dt class="service-info-first-line-title">제휴∙단체안내</dt>
+                <dd class="service-info-first-line-item"><a href="">해피로그 가입</a></dd>
+                <dd class="service-info-first-line-item"><a href="">기업제휴 문의</a></dd>
+                <dd class="service-info-first-line-item"><a href="">펀딩 개설 신청</a></dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="footer-info-box">
+        <div class="footer-info-inner">
+            <ul class="footer-info-list">
+                <li class="footer-info-item"><a href="" target="해피빈 이용약관">해피빈 이용약관</a></li>
+                <li class="footer-info-item"><a href="" target="개인정보처리방침"><strong>개인정보처리방침</strong></a></li>
+                <li class="footer-info-item"><a href="" target="책임의 한계와 법적고지">책임의 한계와 법적고지</a></li>
+                <li class="footer-info-item"><a href="" target="고객센터">고객센터</a></li>
+                <li class="footer-info-item"><a href="" target="공익제보(행정안전부)">공익제보(행정안전부)</a></li>
+            </ul><br>
+            <!--ul 끼리 붙어 있어 줄바꿈이 생기지 않아서 넣어줌-->
+            <ul class="footer-info-list">
+                <li class="footer-info-item">제단법인 굿아이디어</li>
+                <li class="footer-info-item">대표 : 최정우</li>
+                <li class="footer-info-item">사업자 등록번호 :199-40-91928</li>
+                <li class="footer-info-item">통신판매업신고 : 2015-대전충남-1994호</li>
+            </ul><br>
+            <address class="footer-info-address">대전 충남 대덕대로 150 11층 (갈마동,창원빌딩) 대표전화 : 1588-8282</address>
+            <small class="footer-info_notice">
+                재능 기부 및 직접기부의 진행과 리워드 제공의 책임은 해당 프로젝트의 개설자에게 있습니다. 굿아이디어는 해당 프로젝트의 당사자가 아니며, 리워드 제공에 대한 책임을 지지 않습니다.
+            </small>
+            <div class="footer-info-copyright">
+                <a href="" class="footer-info-logo">
+                    <img src="img/company.png" class="company-logo" alt="LOGO">
+                </a> <br>
+                <span class="Copyright">Copyright © G&I Corp. All Rights Reserved.</span>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</div>
+</div>
+</div>
+
+</html>

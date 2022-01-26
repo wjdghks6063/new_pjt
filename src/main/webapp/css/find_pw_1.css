@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+ 
+    justify-content:center;
+    align-items: center;
+    background-size:cover;
+    background: url("pastel2.jpg") no repeat center;
+    animation:image_change 10s infinite;
+    margin: auto;
+}
+
+section{
+	   font-family: 'Dongle';
+    box-shadow: 1px 3px 19px 4px lightgray; width:600px; 
+   
+    padding-top:30px;
+    margin-right:20px; 
+    padding-bottom:20px;
+        margin: auto;
+         margin-top:60px; 
+}
+
+body::before{
+    position: absolute; z-index: 1;
+    top:0; right:0; bottom:0; left:0;
+}
+
+.int_area{
+	margin-top:30px;
+}
+.int_area input{
+    width: 60%;
+    margin-left: 10px;
+    height: 40px;
+    padding: 1px 10px 0px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 20px;
+    color: lightslategray;
+    outline: none;
+}
+
+
+.find_id_form h1{
+    font-size: 50px; color:gray;
+    text-align: center;
+}
+
+.find_id_form_2{
+        margin-left:80px;
+}
+
+.int_area label{	
+   margin-left:10px;
+   font-size:40px;
+   color:#999;
+}
+
+.btn_area {margin-top:30px;}
+.btn_area button{
+    width:20%;
+    margin-left: 168px;
+    height:40px;
+    background:gray;
+    color:white;
+    font-size:30px;
+    border: none;
+    border-radius:25px;
+    font-family: 'Dongle';
+    
+}
+
+.injung_button{
+   width: 15%;
+    margin-left: 13px;
+    height: 38px;
+    background:gray;
+    color:white;
+    font-size:30px;
+    border: none;
+    border-radius:25px;
+    font-family: 'Dongle';
+    
+}
+
+.injung_button:disabled,
+.injung_button[disabled]{
+   width: 15%;
+    margin-left: 13px;
+    height: 38px;
+    background:lightgray;
+    color:white;
+    font-size:30px;
+    border: none;
+    border-radius:25px;
+    font-family: 'Dongle';
+ 	 cursor:not-allowed;
+}

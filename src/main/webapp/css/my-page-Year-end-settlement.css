@@ -1,0 +1,196 @@
+.my_content {
+    float: right;
+    width: 884px;
+}
+.my_title {
+    font-family: NanumSquareWebFont,dotum,Sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -.3px;
+}
+.my_tax_notice {
+    margin-top: 29px;
+    padding: 32px 0 31px;
+    border: 1px solid #e5e5e5;
+    background-color: #f6f6f6;
+    line-height: 24px;
+    text-align: center;
+    color: #999;
+}
+.my_tax_notice .point {
+    display: block;
+    font-size: 16px;
+    color: #00ab33;
+}
+.my_tax_wrap {
+    margin-top: 30px;
+    padding: 49px 48px 48px;
+    border: 1px solid #e0e0e0;
+}
+.my_tax_notice~.my_tax_wrap, .my_tax_notice~form .my_tax_wrap {
+    margin-top: 24px;
+}
+.my_tax_title {
+    margin: 0 -48px;
+    padding-bottom: 50px;
+    border-bottom: 1px dashed #d8d8d8;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -.7px;
+    text-align: center;
+}
+.my_tax_title .point {
+    color: #00ab33;
+}
+.my_tax_sub_title {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: NanumSquareWebFont,dotum,Sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+}
+.my_tax_text_box {
+    margin-top: 14px;
+    padding: 27px 22px;
+    clear: both;
+    background-color: #f9f9f9;
+    line-height: 20px;
+    color: #666;
+}
+.my_tax_text_description .highlight {
+    font-weight: 400;
+    color: #202020;
+}
+.my_tax_text_box .link {
+    text-decoration: underline;
+}
+.my_tax_text_hr {
+    margin: 18px 0 19px;
+    height: 1px;
+    border: 0;
+    background: rgba(0,0,0,.06);
+    display: block;
+}
+.my_tax_text_title {
+    margin-bottom: 12px;
+    font-family: NanumBarunGothic,dotum,Sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #10c838;
+}
+.my_tax_text_description+.my_tax_text_description {
+    margin-top: 21px;
+}
+.my_tax_text_description .emphasis {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: underline;
+}
+.my_tax_radio_area {
+    padding: 29px 0 48px;
+    text-align: center;
+}
+.my_tax_label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    line-height: 20px;
+    color: #828282;
+    margin-right: 8px;
+}
+.my_tax_personal_area {
+    padding-top: 33px;
+    border-top: 1px solid #e0e0e0;
+}
+.my_tax_personal_group {
+    margin-top: 15px;
+}
+.my_tax_personal_label {
+    float: left;
+    width: 102px;
+    line-height: 38px;
+    color: #828282;
+}
+.my_tax_address_input, .my_tax_address_input2, .my_tax_personal_input, .my_tax_personal_input2 {
+    height: 38px;
+    padding-left: 16px;
+    border: 1px solid #e0e0e0;
+    line-height: 36px;
+    vertical-align: top;
+}
+.my_tax_personal_input {
+    width: 235px;
+}
+.my_tax_personal_group {
+    margin-top: 15px;
+}
+.my_tax_personal_group .bar {
+    padding: 0 4px;
+    font-size: 12px;
+    line-height: 38px;
+    vertical-align: middle;
+    color: #828282;
+}
+.btn_address_list {
+    width: 82px;
+    height: 32px;
+    border: solid 1px rgba(0,0,0,.15);
+    color: #666;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn_address_list[disabled] {
+    border-color: rgba(0,0,0,.07);
+    color: #c6c6c6;
+}
+.my_tax_address_area .btn_address {
+    width: 90px;
+    height: 38px;
+    margin-left: -1px;
+    border: 1px solid #828282;
+    background-color: #fff;
+    color: #666;
+    vertical-align: top;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.my_tax_address_area .btn_address:disabled {
+    border-color: #d3d3d3;
+    color: #828282;
+}
+.my_tax_address_input2 {
+    width: 405px;
+}
+.my_address_box {
+    margin-top: 12px;
+}
+.my_tax_address_area {
+    overflow: hidden;
+    line-height: 38px;
+}
+.my_tax_address_input2~.my_tax_address_input2 {
+    width: 222px;
+    margin-left: 6px;
+}
+.my_tax_address_notice {
+    margin-top: 12px;
+    line-height: 20px;
+    color: #828282;
+}
+.my_tax_btn {
+    display: block;
+    width: 155px;
+    margin: 40px auto 0;
+    border: 1px solid #10c236;
+    background-color: #10c838;
+    font-size: 15px;
+    line-height: 41px;
+    text-align: center;
+    color: #fff;
+}
+input#directAddress {
+    margin-left: 10px;
+}

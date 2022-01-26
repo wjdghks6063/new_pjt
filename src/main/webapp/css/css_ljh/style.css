@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+body{
+    font-family: 'Dongle';
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-size:cover;
+    background: url("pastel2.jpg") no repeat center;
+    animation:image_change 10s infinite;
+}
+
+section{
+    box-shadow: 1px 3px 19px 4px lightgray; width:500px; 
+    margin-top:22px; 
+    padding-top:30px;
+    margin-right:20px; 
+    padding-bottom:20px;
+}
+body::before{
+    position: absolute; z-index: 1;
+    top:0; right:0; bottom:0; left:0;
+}
+
+.login_form{
+    position: relative; z-index:2;
+}
+
+.login_form h1{
+    font-size: 42px; color:lightslategray;
+    text-align: center;
+}
+
+.int_area{width:400px; margin-left:50px; position:relative; }
+.int_area input{
+    width:95%;
+    height:100px;
+    padding: 50px 10px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #999;
+    font-size: 28px; color: lightslategray;
+    outline:none;
+}
+
+.int_area label{
+    size:1px;
+    position: absolute; left:15px; top:45px;
+    font-size:38px; 
+    color:#999;
+    transition: top .1s ease;
+}
+
+.int_area input:focus+label,
+.int_area input:valid + label{
+    top: 20px;
+    font-size:28px; color:lightgray;
+}
+
+.btn_area {margin-top:30px;}
+.btn_area button{
+    width:88%;
+    margin-left:30px;
+    height:70px;
+    background:lightgray;
+    color:white;
+    font-size:35px;
+    border: none;
+    border-radius:25px;
+    font-family: 'Dongle';
+    
+}
+.login_img{
+    width:123px;
+    height:70px;
+    margin-top:20px;
+    margin-left:20px;
+    margin-right:0px;
+    border-radius: 20%;
+}
+
+.caption{
+    margin-top:10px;
+    text-align:center;
+}
+
+.caption a{
+    font-size: 32px; color: lightslategray;
+    text-decoration: none;
+}

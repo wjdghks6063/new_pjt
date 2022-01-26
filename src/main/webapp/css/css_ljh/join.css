@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*{margin:0; padding:0; box-sizing: border-box;}
+
+#sub_content{
+	width:100%;
+}
+section{
+    font-family: 'Dongle';
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-size:cover;
+    background: url("pastel2.jpg") no repeat center;
+    animation:image_change 10s infinite;
+    width:100%;
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+section::before{
+    position: absolute; z-index: 1;
+    top:0; right:0; bottom:0; left:0;
+}
+
+.location {
+	width:100%;
+	font-family: 'Dongle';
+    display:flex;
+	padding-top:5px;
+	padding-bottom:5px;
+	position:relative;
+    background-color: #636363;
+}
+.wrap {
+    position: relative;
+    height:20px;
+    width: 1200px;
+}
+
+.location .wrap span{
+	color:white;
+	font-size:30px;
+	margin-left:20px;
+    width: 15px;
+    height:30px;
+    text-indent: -9999px;
+    background-position: -253px -161px;
+}
+
+
+.wrap a{
+	color:white;
+	font-size:30px;
+	padding-top:50x;
+	margin-left:20px;
+	
+	}
+	
+
+	
+.head_area{
+	 font-family: 'Dongle';
+    position: relative; z-index:2;
+    margin-top:20px;
+    margin-bottom:10px;
+    
+}
+
+.head_area h1{
+	padding-top:10px;
+    font-size: 70px; color:gray;
+    text-align: center;
+}
+
+.int_area{width:650px; position:relative;}
+.int_area input{
+    width:100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #999;
+    font-size: 30px; color: lightslategray;
+    outline:none;
+}
+
+.int_area label{
+    size:1px;
+    position: absolute; left:15px; top:15px;
+    font-size:40px; 
+    color:#999;
+    transition: top .1s ease;
+}
+
+.int_area input:focus+label,
+.int_area input:valid + label{
+    top: 0;
+    font-size:25px; color:lightgray;
+}
+
+.int_area_email{width:650px; position:relative;}
+.int_area_email input{
+    width:100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #999;
+    font-size: 30px; color: lightslategray;
+    outline:none;
+}
+
+.int_area_email label{
+    size:1px;
+    position: absolute; left:15px; top:15px;
+    font-size:40px; 
+    color:#999;
+    transition: top .1s ease;
+}
+
+.int_area_email input:focus+label,
+.int_area_email input:valid + label{
+    top: 0;
+    font-size:30px; color:lightgray;
+}
+.result-check_tell{
+    color:red;
+    font-size:25px;
+}
+.result-check_email{
+    color:red;
+    font-size:25px;
+}
+.agree_area p{
+    font-weight: 100;
+    font-size:24px;
+    color:gray;
+    margin-bottom:3px;
+}
+
+
+
+.agree_area li{
+	 list-style:disc;
+	 color:gray;
+    margin-left:20px;
+}
+
+.agree_area input{
+    color:gray;
+}
+
+<!-- -->
+.agree_area input[type="radio"] {
+    display: none;
+}
+
+.agree_area input[type="radio"] + span {
+    display: inline-block;
+    padding: 0px 5px;
+    font-size:20px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.agree_area input[type="radio"]:checked + span {
+    background-color:lightgray;
+    color: #ffffff;
+}
+.agree_area a{
+    text-decoration-line : none;
+}
+
+
+.btn_area {margin-top:30px;}
+
+.btn_area button{
+    width:100%;
+    height:50px;
+    background:lightgray;
+    color:white;
+    font-size:20px;
+    border: none;
+    border-radius:25px;
+    
+}
+input[type="checkbox"] {
+    position: relative;
+    top: 4px;
+}
+
+.info_agree{
+    font-size:20px;
+}
+.caption{
+    margin-top:20px;
+    text-align:center;
+}
+
+.caption a{
+    font-size: 15px; color: lightslategray;
+    text-decoration: none;
+}

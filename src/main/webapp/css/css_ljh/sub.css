@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+
+.donation-parameter-blue{
+    display: inline-block;
+    height: 100%;
+    background-color: #00BFFF;
+    text-align: right;
+    vertical-align: top;
+}
+
+.donation-parameter-num2{
+    display: inline-block;
+    margin-top: 11px;
+    font-size: 14px;
+    letter-spacing: -.2px;
+    color:#00BFFF;
+}
+
+
+/* 서브 css 위는 베이스와 같다.-----------------------------------------------------------------------------*/
+.sub-main {
+	margin: -52px auto 0;
+	padding-top:75px;
+	width:1140px;
+	
+	/*background-color:#c0c0c0;*/
+
+}
+.sub-menu {
+	width:1140px;
+	height:100px;
+	/*background-color:#617161;*/
+	
+}
+.sub-menu ul {
+	width: 95%;
+    margin: 0 auto;
+    max-width: 960px;
+	background-color:#fff;
+}
+.sub-menu li {
+	float: left;
+    width: 20%;
+    padding: 0 2%;
+    font-size: 30px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+	
+	background-color:#fdc446;
+}
+
+.sub-search {
+	width:1140px;
+	
+	/*background-color:#777777;*/
+
+}
+
+.sub-search ul {
+	width: 95%;
+    margin: 0 auto;
+    max-width: 960px;
+	
+}
+.sub-search li {
+	float: left;
+    width: 18%;
+    
+	margin-right: 17px;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #fff;
+    text-align: center;
+    list-style: none;
+	border-radius: 25px;
+	background-color:#ff6781;
+	text-shadow: 2px 2px 2px #ff3399;
+		
+}
+.sub-search li:hover{
+	
+    color: #ff6781;
+    text-align: center;
+    list-style: none;
+	border-radius: 25px;
+	background-color:#ffdfe8;
+	text-shadow: 2px 2px 2px #fff;
+		
+}
+.sub-search li a:hover{
+	
+    color: #ff6781;
+    text-align: center;
+    list-style: none;
+	border-radius: 25px;
+	background-color:#ffdfe8;
+	text-shadow: 2px 2px 2px #fff;
+		
+}
+
+.sub-content {
+	width: 100%;
+	
+    overflow: hidden;
+   /* padding: 20px 0;*/
+	/*background-color:#399393;*/
+	
+}
+.main-story {
+	background: no-repeat center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 333;
+    background-size: cover;
+    opacity: 0;
+    transition: all 0.5s;
+	font-size: 20px;
+}
+
+/* sub-write css*/
+.sub-write {width:1140px; padding:20px 20px 130px 20px; margin:0 auto;  }
+.table {border:1px solid #e1e1e1; width:97%; margin:0 auto; background:#fff; }
+.table .title {width:95%; height:40px; padding:10px; margin:10px; border:none; font-family: 'Dongle'; font-size:15px;}
+.table .cont {width:95%; height:200px; padding:10px; margin:10px; border:none; font-family: 'Dongle'; font-size:15px; background-color:#fff;}
+.table th {background:#f0f0f0; border:NONE; } 
+.table td {border:none; }
+.table .file {width:95%; height:40px; margin:10px; border:none; font-size:12px; font-family: 'Dongle';   background-color:#fff;}
+input.btn {float:right;width:95px; height:40px; border:1px solid #dcddc; background:0 none; border-radius: 25px; cursor:pointer; margin:10px;}
+.title {width:95%; height:40px; padding:10px; margin:10px; border:none; font-family: 'Dongle'; font-size:15px; background-color:#fff;}
+.title2 {margin-bottom:20px; text-align:center;width:95%; height:80px; padding:10px; margin:10px; border:none; font-family: 'galmat'; font-size:45px; background-color:#f0f0f0; color:#333333;}
+.tser{margin-left:20px;height:25px;}
+
+/* cont css */
+.cont {width:100%; margin:0 auto; overflow:hidden; padding:70px 20px 150px 20px;}
+/*.cont .img {float:left; width:500px; height:500px; display:inline-block;}*/
+.cont h3 {font-size:22px; color:#444444; font-weight:bold; padding-bottom:50px;}
+.cont h3 span{font-size:12px; color:#999; letter-spacing:1px; }
+.cont .txt {width:650px; height:290px; float:left; font-size:14px; display:inline-block; color:#777; padding:10px 10px; line-height:32px; border: none;resize: none;}
+.con1{width:760px; float:left; height:2000px;background-color:#399393;}
+.con2{width:340px; float:right; position:pixed; background-color:#999999;}
+/*눈내리는 효과------------------------------------------------------------------------*/
+.section01{position:relative; height:500px; background-color:#fff; }
+.section01 canvas { display: block; position: absolute; top: 0; left:50%; margin-left:-500px; width:1000px; height:500px; z-index: 1; pointer-events: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
