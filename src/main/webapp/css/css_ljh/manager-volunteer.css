@@ -49,11 +49,9 @@
 .list_news {
     position: relative;
 }
-
 .list_news .item_news+.item_news {
     margin-top: 10px;
 }
-
 .my_recent_news_feed .list_news {
     padding: 28px 0 35px;
 }
@@ -116,12 +114,44 @@
     color: #666;
     letter-spacing: -.3px;
 }
-.list_news .text_information {
+.list_news .text_information+.text_information::before {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 2px 9px 0;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    content: '';
+}
+.list_news .text_complete {
     font-size: 15px;
-    color: #666;
+    color: #00ab33;
     letter-spacing: -.3px;
 }
-.list_news .text_information+.text_information::before {
+.list_news .text_information+.text_complete::before {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 2px 9px 0;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    content: '';
+}
+.list_news .text_fail {
+    font-size: 15px;
+    color: #f25c5c;
+    letter-spacing: -.3px;
+}
+.list_news .text_information+.text_fail::before {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    margin: 2px 9px 0;
+    background-color: #d8d8d8;
+    vertical-align: top;
+    content: '';
+}
+.list_news .text_information+.text_complete+.text_fail::before {
     display: inline-block;
     width: 1px;
     height: 14px;
@@ -178,7 +208,7 @@ i.fas.fa-chevron-right {
 
 /*활동 내역*/
 .my_recent_activity_wrap {
-    margin-top: 50px;
+    margin-top: 14px;
 }
 .my_activity_month {
     position: relative;
@@ -386,7 +416,7 @@ i.fas.fa-chevron-right {
 }
 
 .my_summary_title .number_wrap {
-    float: right;
+     float: right;
     font-size: 22px;
     font-weight: 500;
     line-height: 41px;
@@ -494,4 +524,37 @@ i.fas.fa-chevron-right {
 .activity_calendar_btn_wrap {
     display: inline-block;
     position: relative;
+}
+/*조회 내용이 없는 경우*/
+.none_message {
+    height: 192px;
+    border: 1px solid #e3e3e3;
+    border-width: 1px 0;
+    font-size: 18px;
+    line-height: 1.11;
+    text-align: center;
+}
+.none_message:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+}
+.none_message .none_message_inner {
+    display: inline-block;
+    vertical-align: middle;
+}
+.none_message .small_text {
+    display: block;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 1.36;
+    color: #828282;
+}
+.my_activity_notice {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: #828282;
 }

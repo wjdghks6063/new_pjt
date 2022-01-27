@@ -63,11 +63,14 @@
     color: #828282;
 }
 .my_activity_calendar_wrap {
-    padding: 15px 0;
+    padding: 15px 100px 15px 0px;
     border: 1px solid #e0e0e0;
     background-color: #fcfcfc;
     text-align: center;
     margin: 34px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .activity_calendar_btn_wrap {
     display: inline-block;
@@ -84,7 +87,7 @@ input#calendar_1 {  /*input type은 이렇게 지정해준다.*/
     font-size: 16px;
     letter-spacing: -.3px;
     cursor: pointer;
-    background-image: url(../img/calendar-alt-regular.svg);
+    background-image: url(/img/calendar-alt-regular.svg);
     background-repeat: no-repeat;
     background-position-x: 130px;
     background-position-y: 6px;
@@ -120,7 +123,7 @@ input#calendar_2 {
     font-size: 16px;
     letter-spacing: -.3px;
     cursor: pointer;
-    background-image: url(../img/calendar-alt-regular.svg);
+    background-image: url(/img/calendar-alt-regular.svg);
     background-repeat: no-repeat;
     background-position-x: 130px;
     background-position-y: 6px;
@@ -139,13 +142,18 @@ select.select {
     background-color: #fff;
     margin-left: 5px;
 }
+p.my_activity_calendar_p {
+    position: relative;
+    right: 80px;
+    color: #929191;
+}
 /*--------------------------------------*/
 .activity_calendar_search {
     width: 70px;
     min-height: 37px;
-    margin-left: 7px;
+    margin-left: 25px;
     padding-top: 1px;
-    border: 1px solid #0f8fe0;
+    border: 1px solid #0f7be0;
     background-color: #0f92e0;
     font-size: 15px;
     line-height: 2.2;
@@ -157,7 +165,8 @@ select.select {
 }
 .my_activity_month {
     position: relative;
-    margin: -3px 0;
+    margin: 30px 0 0 0;
+ /* margin: -3px 0; 기존 값*/
     background-color: #fff;
     line-height: 24px;
     text-align: center;
@@ -198,42 +207,222 @@ select.select {
     width: 92px;
     vertical-align: middle;
 }
-.my_activity_cong_cancelled { /*색 안들어 온것*/
+/*카테고리 이미지-----------------------------------------------------------------------------------------------*/
+.my_activity_end.dong-gu { /*색 안들어 온것 테두리 :동구*/
     display: inline-block;
     width: 72px;
     height: 72px;
-    padding: 17px 18px;
-    border: 1px solid #bfbfbf;
+    padding: 14px 16px;
+    border: 1px solid #c7c8c7;
     border-radius: 50%;
 }
-.my_activity_cong_cancelled:before {
-    background-image: url(../img/hand.png);
-    filter: invert(85%) sepia(12%) saturate(18%) hue-rotate(345deg) brightness(91%) contrast(85%);
-    background-position: 50% 50%;
-    background-size: cover;
-    width:  38px;
-    height: 36px;
+.my_activity_end.dong-gu:before { /*색 안들어 온것 :동구*/
+  	background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
     display: inline-block;
-    content: '';
+    content: '동구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: gray;
+    font-family: 'maru-buri-reg';
 }
-.my_activity_cong_success { /*초록색 들어온것*/
-    display: inline-block;
+.my_activity_ing.dong-gu { /*초록색 들어온것  테두리:동구*/
+   	display: inline-block;
     width: 72px;
     height: 72px;
-    padding: 17px 18px;
+    padding: 14px 16px;
     border: 1px solid #0f92e0;
     border-radius: 50%;
 }
-.my_activity_cong_success:before {
-    background-image: url(../img/hand.png);
-    filter: invert(44%) sepia(46%) saturate(4387%) hue-rotate(178deg) brightness(99%) contrast(88%);
-    background-position: 50% 50%;
-    background-size: cover;
-    width: 38px;
-    height: 36px;
+.my_activity_ing.dong-gu:before { /*초록색 들어온것 : 동구*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
     display: inline-block;
-    content: '';
+    content: '동구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: #0f92e0;
+    font-family: 'maru-buri-reg';
 }
+/*----------------------------------------------------------*/
+.my_activity_end.jung-gu { /*색 안들어 온것  테두리 :중구*/
+   	display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #c7c8c7;
+    border-radius: 50%;
+}
+.my_activity_end.jung-gu:before { /*색 안들어 온것 :중구*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '중구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: gray;
+    font-family: 'maru-buri-reg';
+}
+.my_activity_ing.jung-gu { /*초록색 들어온것 테두리 : 중구*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #0f92e0;
+    border-radius: 50%;
+}
+.my_activity_ing.jung-gu:before { /*초록색 들어온것 : 중구*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '중구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: #0f92e0;
+    font-family: 'maru-buri-reg';
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.my_activity_end.seo-gu { /*색 안들어 온것 테두리 :서구*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #c7c8c7;
+    border-radius: 50%;
+}
+.my_activity_end.seo-gu:before { /*색 안들어 온것 :서구*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '서구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: gray;
+    font-family: 'maru-buri-reg';
+}
+.my_activity_ing.seo-gu { /*초록색 들어온것 테두리 : 서구*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #0f92e0;
+    border-radius: 50%;
+}
+.my_activity_ing.seo-gu:before { /*초록색 들어온것 : 서구*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '서구';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: #0f92e0;
+    font-family: 'maru-buri-reg';
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.my_activity_end.yuseong { /*색 안들어 온것 테두리 :유성*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #c7c8c7;
+    border-radius: 50%;
+}
+.my_activity_end.yuseong:before { /*색 안들어 온것 :유성*/
+	background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '유성';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: gray;
+    font-family: 'maru-buri-reg';
+}
+.my_activity_ing.yuseong { /*초록색 들어온것 테두리 : 유성*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #0f92e0;
+    border-radius: 50%;
+}
+.my_activity_ing.yuseong:before { /*초록색 들어온것 : 유성*/
+	background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '유성';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: #0f92e0;
+    font-family: 'maru-buri-reg';
+}
+/*------------------------------------------------------------------------------------------------------------*/
+.my_activity_end.daedeok { /*색 안들어 온것 테두리 :대덕*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #c7c8c7;
+    border-radius: 50%;
+}
+.my_activity_end.daedeok:before { /*색 안들어 온것 :대덕*/
+    background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '대덕';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+   	color: gray;
+    font-family: 'maru-buri-reg';
+}
+.my_activity_ing.daedeok { /*초록색 들어온것 테두리 : 대덕*/
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    padding: 14px 16px;
+    border: 1px solid #0f92e0;
+    border-radius: 50%;
+}
+.my_activity_ing.daedeok:before { /*초록색 들어온것 : 대덕*/
+	background-position: -83px -514px;
+    width: 40px;
+    height: 38px;
+    display: inline-block;
+    content: '대덕';
+    text-align: center;
+    margin: 0 auto;
+    line-height: 44px;
+    font-size: 20px;
+    color: #0f92e0;
+    font-family: 'maru-buri-reg';
+}
+/*------------------------------------------------------------------------------------------------------------*/
 .my_activity_center {
     display: table-cell;
     line-height: 19px;
@@ -248,6 +437,9 @@ select.select {
     display: block;
     font-size: 16px;
 }
+.my_activity_text2+.my_activity_text2 {
+    margin-top: 3px;
+}
 .my_activity_date+.my_activity_text2, .my_activity_date+.my_activity_title {
     margin-top: 6px;
 }
@@ -261,7 +453,7 @@ select.select {
 }
 .my_activity_right {
     display: table-cell;
-    width: 180px;
+    width: 120px;
     text-align: right;
     vertical-align: middle;
 }
@@ -276,6 +468,24 @@ select.select {
     font-family: NanumSquareWebFont,dotum,Sans-serif;
     font-size: 18px;
     vertical-align: top;
+}
+.my_activity_price .number_end {
+    font-family: NanumSquareWebFont,dotum,Sans-serif;
+    font-size: 18px;
+    vertical-align: top;
+    color: #9c9c9c;
+}
+.my_activity_price .number_com {
+    font-family: NanumSquareWebFont,dotum,Sans-serif;
+    font-size: 18px;
+    vertical-align: top;
+    color: #10c838;
+}
+.my_activity_price .number_today {
+    font-family: NanumSquareWebFont,dotum,Sans-serif;
+    font-size: 18px;
+    vertical-align: top;
+    color: #f25c5c;
 }
 /*더보기 버튼*/
 .btn_horizontal_more {

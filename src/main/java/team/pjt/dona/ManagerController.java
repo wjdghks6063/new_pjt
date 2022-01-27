@@ -14,6 +14,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import command.manager.Manager_donation;
 import command.manager.Manager_donation_search;
 import command.manager.Manager_home;
+import command.manager.Manager_volunteer;
+import command.manager.Manager_volunteer_search;
 import common.Command;
 import dao.Manager_dao;
 import dto.Manager_dto;
@@ -82,19 +84,18 @@ public class ManagerController {
 			manager.execute(request);
 			viewPage="manager/manager_donation_search";
 			
-		}
-		/*else if(gubun.equals("Dona_Search")) {
-			//기부 검색
-			Command manager = new Manager_donation_search();
-			manager.execute(request);
-			viewPage="manager/manager_donation_search";
-			
-		}*/
-		else if(gubun.equals("Vol")) {
+		}else if(gubun.equals("Vol")) {
 			//기부 뷰
-			Command manager = new Manager_donation();
+			Command manager = new Manager_volunteer();
 			manager.execute(request);
 			viewPage="manager/manager_volunteer";
+			
+		}else if(gubun.equals("Vol_Search")) {
+			//기부 검색
+			Command manager = new Manager_volunteer_search();
+			manager.execute(request);
+			viewPage="manager/manager_volunteer_search";
+			
 		}
 		
 		return viewPage;

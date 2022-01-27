@@ -123,28 +123,34 @@
                 <div class="my_summary_box">
                     <div class="my_summary_title">
                         <h3 class="title">오늘의 기부 일정</h3>
-                        <span class="number_wrap"><span class="number" id="myCashTotal">${TD_list_num}</span> 건</span>
+                    <c:forEach items="${DT_list}" var="dt_list">   
+                        <span class="number_wrap"><span class="number" id="myCashTotal">${dt_list.getEnd_vol()}</span> 건</span>
                     </div>
-                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${TDC_list_num}</strong> 건</span></a>
-                    <a href="" class="my_summary_item"><span class="title">달성 미달</span><span class="number_wrap"><strong class="number" id="myProject">${TDD_list_num}</strong> 건</span></a> 
+                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${dt_list.getTotal_vol()}</strong> 건</span></a>
+                    <a href="" class="my_summary_item"><span class="title">달성 미달</span><span class="number_wrap"><strong class="number" id="myProject">${dt_list.getStart_vol()}</strong> 건</span></a>
+                    </c:forEach>  
                 </div>
                 <div class="my_summary_box">
                     <div class="my_summary_title">
                         <h3 class="title">이번 주 기부 일정</h3>
-                        <span class="number_wrap"><span class="number" id="myCashTotal">${TW_list_num}</span> 건</span>
+                    <c:forEach items="${DW_list}" var="dw_list">  
+                        <span class="number_wrap"><span class="number" id="myCashTotal">${dw_list.getDo_total()}</span> 건</span>
                     </div>
-                    <a href="" class="my_summary_item"><span class="title">진행 중</span><span class="number_wrap"><strong class="number" id="myProject">${TWP_list_num}</strong> 건</span></a>
-                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${TWC_list_num}</strong> 건</span></a> 
-                    <a href="" class="my_summary_item"><span class="title">마감</span><span class="number_wrap"><strong class="number" id="myProject">${TWD_list_num}</strong> 건</span></a> 
+                    <a href="" class="my_summary_item"><span class="title">진행 중</span><span class="number_wrap"><strong class="number" id="myProject">${dw_list.getDo_pro()}</strong> 건</span></a>
+                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${dw_list.getDo_com()}</strong> 건</span></a> 
+                    <a href="" class="my_summary_item"><span class="title">마감</span><span class="number_wrap"><strong class="number" id="myProject">${dw_list.getDo_end()}</strong> 건</span></a>
+                    </c:forEach>    
                 </div>
                 <div class="my_summary_box">
                     <div class="my_summary_title">
                         <h3 class="title">이번 달 기부 일정</h3>
-                        <span class="number_wrap"><span class="number" id="myCashTotal">${TM_list_num}</span> 건</span>
+                    <c:forEach items="${DM_list}" var="dm_list"> 
+                        <span class="number_wrap"><span class="number" id="myCashTotal">${dm_list.getDo_total()}</span> 건</span>
                     </div>
-                    <a href="" class="my_summary_item"><span class="title">진행 중</span><span class="number_wrap"><strong class="number" id="myProject">${TMP_list_num}</strong> 건</span></a>
-                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${TMC_list_num}</strong> 건</span></a> 
-                    <a href="" class="my_summary_item"><span class="title">마감</span><span class="number_wrap"><strong class="number" id="myProject">${TMD_list_num}</strong> 건</span></a>
+                    <a href="" class="my_summary_item"><span class="title">진행 중</span><span class="number_wrap"><strong class="number" id="myProject">${dm_list.getDo_pro()}</strong> 건</span></a>
+                    <a href="" class="my_summary_item"><span class="title">달성 완료</span><span class="number_wrap"><strong class="number" id="myProject">${dm_list.getDo_com()}</strong> 건</span></a> 
+                    <a href="" class="my_summary_item"><span class="title">마감</span><span class="number_wrap"><strong class="number" id="myProject">${dm_list.getDo_end()}</strong> 건</span></a>
+                    </c:forEach>   
                 </div>
             </div>
         

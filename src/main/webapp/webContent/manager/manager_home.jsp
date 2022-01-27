@@ -106,7 +106,7 @@ function goView(no){
 						<div class="my_summary_box">
 							<div class="my_summary_title">
 								<h3 class="title">오늘의 봉사 일정</h3>
-								<c:forEach items="${vol_list}" var="vol_list">
+								<c:forEach items="${Vol_list}" var="vol_list">
 									<c:set var="total_vol" value="${vol_list.getEnd_vol()}" />
 									<!-- javascript에 넣기 위해 변수를 선언한다.-->
 									<span class="number_volunteer"><strong
@@ -195,11 +195,11 @@ function goView(no){
 								<c:forEach items="${PWV_list}" var="pwv_list">
 								<li class="item_news type_funding">
 									<div class="card_news">
-										<a href="" class="link"></a>
-										<p class="text_content">${pwv_list.getVol_title()} (장소: ${pwv_list.getVol_site()})</p>
-										<span class="text_information">${pwv_list.getVolname()}</span> 
-										<span class="text_information">참여인원 : ${pwv_list.getVol_total()} / ${pwv_list.getVol_goal()} 명</span>
-										<span class="text_information">모집기간 : ${pwv_list.getVol_start_date()} ~ ${pwv_list.getVol_end_date()}</span>
+										<a href="javascript:goView('${pwv_list.getNo()}')" class="link"></a>
+										<p class="text_content">${pwv_list.getDo_title()} (장소: ${pwv_list.getDo_today()})</p>
+										<span class="text_information">${pwv_list.getDo_name()}</span> 
+										<span class="text_information">참여인원 : ${pwv_list.getDo_total()} / ${pwv_list.getDo_goal()} 명</span>
+										<span class="text_information">모집기간 : ${pwv_list.getDo_start_date()} ~ ${pwv_list.getDo_end_date()}</span>
 										<button class="button_delete"
 											data-id="61d7a8bc2c5ccf943ae43321">
 											<span class="blind">삭제</span>
